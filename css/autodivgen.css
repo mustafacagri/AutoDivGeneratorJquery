@@ -1,0 +1,126 @@
+:root {
+    --color0: #fff;
+    --color1: #ED1C24;
+    --color2: #dc3545;
+    --color3: #212529;
+    --color4: #eee;
+    --color5: #e8ebf5;
+    --color6: #ccc;
+}
+
+body {
+    padding: 30px;
+    height: 100%;
+    background: url("../img/bg.jpg");
+    background-size: cover;
+}
+
+h1 {
+    color: var(--color1);
+}
+
+.autodivgen {
+    font-family: 'Roboto';
+    position: relative;
+    display: block;
+    background-color: var(--color4);
+    color: var(--color3);
+    padding: 0px 0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+.autodivgen:hover {
+    text-decoration: none;
+    background-color: var(--color0);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+.autodivgen>.title {
+    color: var(--color2);
+    position: relative;
+    font-weight: 700;
+    font-size: 1.6rem;
+    padding: 10px 15px;
+    line-height: 2.4rem;
+    border-bottom: 1px solid var(--color6);
+}
+
+.autodivgen>.title>.right {
+    float: right;
+    border-left: 1px solid var(--color5);
+    padding-left: 15px;
+    color: var(--color3);
+}
+
+.autodivgen>.title>.right:hover {
+    color: var(--color2);
+    text-decoration: none;
+}
+
+.autodivgen>.title>.right:after {
+    content: "";
+    clear: both;
+    display: Block;
+}
+
+.autodivgen>.title>.right select {
+    display: inline;
+    max-width: 350px;
+}
+
+.autodivgen>.title>i {
+    font-size: 1.6rem;
+    margin-right: 10px;
+}
+
+.autodivgen>.title:before {
+    bottom: -1px;
+    width: 120px;
+    height: 1px;
+    background: var(--color2);
+    content: '';
+    left: 0;
+    position: absolute;
+}
+
+.autodivgen>.title:after {
+    content: "";
+    clear: both;
+    display: Block;
+}
+
+.autodivgen>.content {
+    z-index: 9;
+    position: relative;
+    padding: 10px 20px;
+    line-height: 2.4rem;
+    text-align: left;
+}
+
+.autodivgen>.vurgula {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.autodivgen>.shadowBg {
+    position: absolute;
+    margin-top: 100px;
+    bottom: 8px;
+    right: 10px;
+    font-size: 72px;
+    color: var(--color2);
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+}

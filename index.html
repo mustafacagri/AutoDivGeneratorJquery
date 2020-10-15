@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- <title>Creating DIV w/ JS & Ajax</title> -->
+    <title>Automatic Div Generator</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/autodivgen.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="autodivgen" data-from-url="" data-title="" data-content-align="center" data-icon="fa fa-building">
+                <h1>Automatic Div Generator</h1>
+                <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                    make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                    Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+        </div>
+
+        <div class="autodivgen" data-from-url="" id="2" data-title="Test Title 2" data-title-align="left" data-content-align="justify" data-icon="fa fa-hand-point-right" data-shadow-bg="fas fa-business-time">
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,
+                looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33
+                of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
+                amet..", comes from a line in section 1.10.32.</p>
+        </div>
+
+        <div class="row">
+            <div class="autodivgen col-md-6" data-from-url="" id="3" data-title="Test Title 3" data-title-align="left" data-content-align="justify" data-icon="fas fa-city">
+                <p>Test col-md-6 => be careful to merge two divs: autodivgen and col-md-6</p>Sometimes I use it like this, but the padding-left originating from row needs to be set well.
+            </div>
+            <div class="col-md-6">
+                <div class="autodivgen" data-from-url="http://localhost/AutomaticDivGenerator/datas/test1.json" data-from-object="test" id="4" data-title="Test Title 4" data-title-align="left" data-content-align="justify" data-icon="fa fa-moon" data-shadow-bg="">
+                    <p>Apart from the articles you have written in this field, it will also add the result from the URL you entered in the data-from-url attribute to the end of the article.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="autodivgen" data-from-url="" id="5" data-title="Test Title 5" data-title-align="left" data-content-align="justify" data-icon="fa fa-building">Test col-md-4</div>
+            </div>
+            <div class="col-md-4">
+                <div class="autodivgen" id="6" data-from-url="http://localhost/AutomaticDivGenerator/datas/test2.json" data-title="Test Title 6" data-title-align="left" data-content-align="justify" data-icon="fa fa-thumbs-up">Test col-md-4</div>
+            </div>
+            <div class="col-md-4">
+                <div class="autodivgen" data-from-url="" id="7" data-title="Test Title 7" data-title-align="left" data-content-align="justify" data-icon="fa fa-calendar-plus">Test col-md-4 => id="7"</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/autodivgen.js"></script>
+</body>
+
+</html>
